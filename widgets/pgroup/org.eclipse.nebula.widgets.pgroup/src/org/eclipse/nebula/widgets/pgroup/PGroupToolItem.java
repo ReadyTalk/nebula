@@ -39,6 +39,11 @@ public class PGroupToolItem extends Item {
 	}
 
 	public Rectangle getBounds() {
+		Rectangle returnBounds = bounds;
+		if (bounds == null) {
+			returnBounds = new Rectangle(0, 0, 0, 0);
+		}
+		
 		return bounds;
 	}
 
