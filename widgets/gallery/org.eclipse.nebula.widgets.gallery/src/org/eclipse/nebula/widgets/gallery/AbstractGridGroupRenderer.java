@@ -749,6 +749,10 @@ public abstract class AbstractGridGroupRenderer extends
 					END);
 		}
 
+		if (group.isDisposed() || item.isDisposed()) {
+      			return null;
+    		}
+
 		int pos = group.indexOf(item);
 		GalleryItem next = null;
 
